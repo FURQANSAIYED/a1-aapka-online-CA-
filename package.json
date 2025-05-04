@@ -2,6 +2,7 @@
   "name": "a1-ca-website",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://furqansaiyed.github.io/a1-aapka-online-CA-",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -12,11 +13,14 @@
     "tailwindcss": "^3.4.1",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.24",
-    "vite": "^5.2.0"
+    "vite": "^5.2.0",
+    "gh-pages": "^6.0.0"
   },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   }
 }
